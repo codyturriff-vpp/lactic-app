@@ -84,7 +84,7 @@ async function addToGoogleSheets(entry) {
     ]];
 
     const response = await fetch(
-      `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1!A:G:append?valueInputOption=USER_ENTERED`,
+      `https://sheets.googleapis.com/v4/spreadsheets/${Lactic K2}/values/Sheet1!A:G:append?valueInputOption=USER_ENTERED`,
       {
         method: 'POST',
         headers: {
@@ -164,3 +164,4 @@ function saveEntry() {
 // Sync on page load
 window.addEventListener('online', syncEntries);
 window.addEventListener('load', syncEntries);
+
