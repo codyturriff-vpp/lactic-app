@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lactic Acid Log</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <h2>Lactic Acid Application</h2>
+
+  <p><strong>Station:</strong> <span id="station"></span></p>
+  <p><strong>Time:</strong> <span id="time"></span></p>
+
+  <label>House #</label><br />
+  <input id="house" type="number" /><br /><br />
+
+  <label>Temperature (°F)</label><br />
+  <input id="temp" type="number" /><br /><br />
+
+  <label>Carcass Coverage</label><br />
+  <button onclick="setCoverage('Pass')">PASS</button>
+  <button onclick="setCoverage('Fail')">FAIL</button><br /><br />
+
+  <label>Number of Drops</label><br />
+  <input id="drops" type="number" /><br /><br />
+
+  <button onclick="saveEntry()">SAVE ENTRY</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
